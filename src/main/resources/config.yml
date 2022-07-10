@@ -1,0 +1,9 @@
+anti-toxicity:
+  #that will check if the player is putting spaces between letters to bypass our system
+  multiple-languages-check: true
+  #that would translate anything that isn't english to check if it's a swear
+  separated-letters-swear-check: false
+blocked-words:
+  - 'nigga'
+  - 'fuck'
+  - 'son of a bitch'
