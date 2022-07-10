@@ -2,7 +2,6 @@ package fr.salers.nomoretoxic.nomoretoxicplayers.manager;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -14,7 +13,7 @@ public class ConfigManager {
 
     private final boolean separatedLettersCheck;
     private final boolean multiLanguageCheck;
-    private List<String> blockedWords;
+    private final List<String> blockedWords;
 
     public ConfigManager(final FileConfiguration config) {
         this.separatedLettersCheck = config.getBoolean("anti-toxicity.separated-letters-swear-check");

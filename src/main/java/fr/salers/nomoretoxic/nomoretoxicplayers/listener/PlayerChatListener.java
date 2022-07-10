@@ -32,7 +32,7 @@ public class PlayerChatListener implements Listener {
             flag = checkManager.checkMultiLang(message);
 
         //not setting it to false, if you're already flagging
-        flag = flag ? true : checkManager.check(message);
+        flag = flag || checkManager.check(message);
 
         event.setCancelled(flag);
 
