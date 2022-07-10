@@ -14,7 +14,7 @@ public class ConfigManager {
 
     private final boolean separatedLettersCheck;
     private final boolean multiLanguageCheck;
-    private List<String> blockedWords = new ArrayList<>();
+    private List<String> blockedWords;
 
     public ConfigManager(final FileConfiguration config) {
         this.separatedLettersCheck = config.getBoolean("anti-toxicity.separated-letters-swear-check");
